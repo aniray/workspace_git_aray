@@ -4,11 +4,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [HeaderComponent, FooterComponent],
   imports: [
-    CommonModule,
-    HeaderComponent,
-    FooterComponent
-  ]
+    CommonModule    
+  ],
+  exports:[HeaderComponent, FooterComponent]
 })
 export class CoreModule { }
